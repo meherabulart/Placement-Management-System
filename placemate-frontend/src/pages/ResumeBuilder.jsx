@@ -1,0 +1,6 @@
+import React from "react";
+import PageHeader from "../components/common/PageHeader";
+
+export default function ResumeBuilder() {
+  return <><PageHeader title="Resume Builder" subtitle="Create a clean placement-ready resume." action={<button className="button button-primary">Save Resume</button>} /><div className="resume-layout"><section className="panel form-stack"><h2>Resume sections</h2><label>Full name<input defaultValue="Zayed Hossain"/></label><label>Professional summary<textarea defaultValue="Computer Science student interested in software development and web technologies." /></label><label>Skills<input defaultValue="React, JavaScript, C++, Python, SQL"/></label><label>Projects<textarea placeholder="Add your strongest projects..." /></label><label>Experience<textarea placeholder="Add internships or experience..." /></label></section><section className="panel resume-preview"><div className="resume-paper"><h1>Zayed Hossain</h1><p>CSE Student · Software Development</p><hr/><h3>Summary</h3><p>Computer Science student interested in software development and web technologies.</p><h3>Skills</h3><p>React · JavaScript · C++ · Python · SQL</p><h3>Projects</h3><p>Add your projects here.</p></div></section></div></>;
+}
